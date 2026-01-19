@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — wing factory my</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700;800&family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<audio id="bg-music" loop>
+    <source src="ratatouille.mp4" type="audio/mp4">
+  </audio>
+  
+<body class="page-menu">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="wing.html">
+			<img src="wingfactory.jpg" alt="Logo" class="brand-logo-img"> 
+          <span class="brand-name">wing factory my</span>
+        </a>
+      </div>
+	  
+ <nav class="site-nav" aria-label="Main navigation">
+  <ul>
+    <li class="dropdown">
+      <a href="wing.html" >Home <span class="arrow">▼</span></a>
+      <div class="dropdown-content">
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </li>
+    
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+      <div class="actions">
+        <a href="menu.html" class="btn order">ORDER NOW</a>
+        <button id="nav-toggle-4" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+
+    <main id="swup" class="transition-fade container">
+    <section id="menu" class="menu-hero">
+      <br><br><br><br>
+      <h1 class="section-title">Menu</h1>
+
+      <!-- Categories menu (filter bar) -->
+      <div class="category-chips" role="tablist" aria-label="Menu categories">
+        <button class="chip active" data-cat="all" aria-pressed="true">All</button>
+        <button class="chip" data-cat="wing-platters" aria-pressed="false">Wing Platters</button>
+        <button class="chip" data-cat="Chicken-Wings" aria-pressed="false">Chicken Wings</button>
+        <button class="chip" data-cat="tender-house" aria-pressed="false">Tender House</button>
+        <button class="chip" data-cat="Burger Station" aria-pressed="false">Burger Station</button>
+        <button class="chip" data-cat="sides-and-snacks" aria-pressed="false">Sides & Snacks</button>
+        <button class="chip" data-cat="sip-station" aria-pressed="false">Sip Station</button>
+		<button class="chip" data-cat="Milkshakes" aria-pressed="false">Milkshakes</button>
+		<button class="chip" data-cat="Ice-Cream" aria-pressed="false">Ice-Cream</button>
+
+
+      </div>
+    </section>
+
+    <section class="menu-grid" aria-live="polite">
+      <article class="menu-item" data-cat="Chicken-Wings">
+        <img src="teriyaki.jpg" alt="teriyaki wings" />
+        <div class="menu-info">
+          <h3>Teriyaki Wings</h3>
+          <p class="muted">8 pcs • celery & ranch</p>
+          <div class="menu-price">RM 24.90</div>
+		  <button class="btn-add-cart" data-name="Teriyaki Wings" data-price="24.90">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="Chicken-Wings">
+        <img src="buffalo.jpg" alt="Buffalo wings" />
+        <div class="menu-info">
+          <h3>Hot Buffalo Wings</h3>
+          <p class="muted">8 pcs • celery & ranch</p>
+          <div class="menu-price">RM 24.90</div>
+        <button class="btn-add-cart" data-name="Hot Buffalo Wings" data-price="24.90">Add to Cart</button>
+        </div>
+      </article>
+	  
+	    <article class="menu-item" data-cat="Chicken-Wings">
+        <img src="garlic.jpg" alt="Garlic wings" />
+        <div class="menu-info">
+          <h3>Garlic Wings</h3>
+          <p class="muted">8 pcs • celery & ranch</p>
+          <div class="menu-price">RM 24.90</div>
+        <button class="btn-add-cart" data-name="Garlic Wings" data-price="24.90">Add to Cart</button>
+        </div>
+      </article>
+	  
+	  <article class="menu-item" data-cat="Chicken-Wings">
+        <img src="cheesywings.jpg" alt="Supreme Cheesy wings" />
+        <div class="menu-info">
+          <h3>Supreme Cheesy Wings</h3>
+          <p class="muted">8 pcs • celery & ranch</p>
+          <div class="menu-price">RM 24.90</div>
+        <button class="btn-add-cart" data-name="Supreme Cheesy Wings" data-price="24.90">Add to Cart</button>
+        </div>
+      </article>
+	  
+	  
+      <article class="menu-item" data-cat="wing-platters">
+        <img src="philly.jpg" alt="Philly cheesesteak" />
+        <div class="menu-info">
+          <h3>Philly Cheesesteak</h3>
+          <p class="muted">Shaved beef, peppers & onions</p>
+          <div class="menu-price">RM 28.90</div>
+		 <button class="btn-add-cart" data-name="Philly Cheesesteak" data-price="28.90">Add to Cart</button>
+        </div>
+      </article>
+        
+
+      <article class="menu-item" data-cat="Burger Station">
+        <img src="borgor.jpg" alt="burger" />
+        <div class="menu-info">
+          <h3>Nashville Chicken Burger</h3>
+          <p class="muted">Fries & BBQ Sauce</p>
+          <div class="menu-price">RM 14.90</div>
+          <button class="btn-add-cart" data-name="Nashville Chicken Burger" data-price="14.90">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="sides-and-snacks">
+        <img src="fries.jpg" alt="Fries" />
+        <div class="menu-info">
+          <h3>Wf Classic Fries</h3>
+          <p class="muted">Crispy, double-fried</p>
+          <div class="menu-price">RM 8.90</div>
+         <button class="btn-add-cart" data-name="Wf Classic Fries" data-price="3.50">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="sides-and-snacks">
+        <img src="cheesyloaded.jpg" alt="Cheesy Loaded Chicken Fries" />
+        <div class="menu-info">
+          <h3>Cheesy Loaded Chicken Fries</h3>
+          <p class="muted">Cheesy & Perfect</p>
+          <div class="menu-price">RM 13.90</div>
+       	  <button class="btn-add-cart" data-name="Mac & Cheese" data-price="3.50">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="boneless-kitchen">
+        <img src="hotdog.jpg" alt="Hotdog" />
+        <div class="menu-info">
+          <h3>Signature Hotdog</h3>
+          <p class="muted">Grilled frank, slaw & mustard</p>
+          <div class="menu-price">RM 7.90</div>
+         <button class="btn-add-cart" data-name="2 Signature Hotdog" data-price="5.50">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="Burger Station">
+        <img src="hotstuff.jpg" alt="fried chicken" />
+        <div class="menu-info">
+          <h3>Hotstuff Chicken Burger</h3>
+          <p class="muted"> Mash Potatoes & Coleslaw</p>
+          <div class="menu-price">RM 10.90</div>
+          <button class="btn-add-cart" data-name="Hotstuff Chicken Burger" data-price="10.90">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="tender-house">
+        <img src="tenders.jpg" alt="Chicken tenders" />
+        <div class="menu-info">
+          <h3>Chicken Tenders</h3>
+          <p class="muted"> 3 pcs • Fries & soft drinks</p>
+          <div class="menu-price">RM 16.90</div>
+          <button class="btn-add-cart" data-name="Chicken Tenders" data-price="16.90">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="wing-platters">
+        <img src="fried.jpg" alt="Fried chicken" />
+        <div class="menu-info">
+          <h3>Classic Fried Chicken</h3>
+          <p class="muted">2 pcs • Mash Potatoes & Coleslaw</p>
+          <div class="menu-price">RM 14.90</div>
+          <button class="btn-add-cart" data-name="Classic Fried Chicken" data-price="5.50">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="sides-and-snacks">
+        <img src="nugget.jpg" alt="nugget" />
+        <div class="menu-info">
+          <h3>Classic Crispy Nuggets</h3>
+          <p class="muted">9 pcs • BBQ Sauce</p>
+          <div class="menu-price">RM 9.90</div>
+         <button class="btn-add-cart" data-name="Classic Crispy Nuggets" data-price="5.50">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="sides-and-snacks">
+        <img src="nuggets.jpg" alt="nugget" />
+        <div class="menu-info">
+          <h3>Spicy Crispy Nuggets</h3>
+          <p class="muted">9 pcs • BBQ Sauce</p>
+          <div class="menu-price">RM 9.50</div>
+         <button class="btn-add-cart" data-name="Spicy Crispy Nuggets" data-price="5.50">Add to Cart</button>
+        </div>
+      </article>
+	  
+	   <article class="menu-item" data-cat="Milkshakes">
+        <img src="vanilla.jpg" alt="Vanilla Milkshakes" />
+        <div class="menu-info">
+          <h3>Vanilla Milkshakes</h3>
+          <p class="muted">Vanilla Milkshakes</p>
+          <div class="menu-price">RM 11.90</div>
+         <button class="btn-add-cart" data-name="Vanilla Milkshakes" data-price="11.90">Add to Cart</button>
+        </div>
+      </article>
+    
+  
+      <article class="menu-item" data-cat="Milkshakes">
+        <img src="chocolate.jpg" alt="Chocolate Milkshakes" />
+        <div class="menu-info">
+          <h3>Chocolate Milkshakes</h3>
+          <p class="muted">Chocolate Milkshakes</p>
+          <div class="menu-price">RM 11.90</div>
+         <button class="btn-add-cart" data-name="Vanilla Milkshakes" data-price="11.90">Add to Cart</button>
+        </div>
+      </article>
+  
+  
+       <article class="menu-item" data-cat="Milkshakes">
+        <img src="redvelvet.jpg" alt="Red Velvet Milkshakes" />
+        <div class="menu-info">
+          <h3>Red Velvet Milkshakes</h3>
+          <p class="muted">Red Velvet Milkshakes</p>
+          <div class="menu-price">RM 11.90</div>
+         <button class="btn-add-cart" data-name="Vanilla Milkshakes" data-price="11.90">Add to Cart</button>
+        </div>
+      </article>
+   
+
+      <article class="menu-item" data-cat="sip-station">
+        <img src="coke.jpg" alt="Coca-Cola" />
+        <div class="menu-info">
+          <h3>Coca-Cola</h3>
+          <p class="muted">Classic Coke</p>
+          <div class="menu-price">RM 3.50</div>
+         <button class="btn-add-cart" data-name="Classic Coke" data-price="2.50">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="sip-station">
+        <img src="sprite.jpg" alt="Sprite" />
+        <div class="menu-info">
+          <h3>Sprite</h3>
+          <p class="muted">Classic Sprite</p>
+          <div class="menu-price">RM 3.50</div>
+          <button class="btn-add-cart" data-name="Classic Sprite" data-price="2.50">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="sip-station">
+        <img src="fanta.jpg" alt="Fanta" />
+        <div class="menu-info">
+          <h3>Fanta</h3>
+          <p class="muted">Classic Fanta Orange</p>
+          <div class="menu-price">RM 3.50</div>
+          <button class="btn-add-cart" data-name="Classic Fanta" data-price="2.50">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-cat="sip-station">
+        <img src="mineral.jpg" alt="Mineral water" />
+        <div class="menu-info">
+          <h3>Mineral</h3>
+          <p class="muted">Mineral Water</p>
+          <div class="menu-price">RM 1.50</div>
+         <button class="btn-add-cart" data-name="Mineral Water" data-price="1.50">Add to Cart</button>
+        </div>
+      </article>
+	  
+	     <article class="menu-item" data-cat="Ice-Cream">
+        <img src="vanillaice.jpg" alt="Vanilla Ice-Cream" />
+        <div class="menu-info">
+          <h3>Vanilla Ice-Cream</h3>
+          <p class="muted">Vanilla Ice-Cream</p>
+          <div class="menu-price">RM 2.50</div>
+          <button class="btn-add-cart" data-name="Vanilla Ice-Cream" data-price="2.50">Add to Cart</button>
+        </div>
+      </article>
+	  
+	     <article class="menu-item" data-cat="Ice-Cream">
+        <img src="chocolateice.jpg" alt="Red Velvet Ice-Cream" />
+        <div class="menu-info">
+          <h3>Chocolate Ice-Cream</h3>
+          <p class="muted">Chocolate Ice-Cream</p>
+          <div class="menu-price">RM 2.50</div>
+          <button class="btn-add-cart" data-name="Chocolate Ice-Cream" data-price="2.50">Add to Cart</button>
+        </div>
+      </article>
+	  
+	     <article class="menu-item" data-cat="Ice-Cream">
+        <img src="redvelvetice.jpg" alt="Red Velvet Ice-Cream" />
+        <div class="menu-info">
+          <h3>Red Velvet Ice-Cream</h3>
+          <p class="muted">Red Velvet Ice-Cream</p>
+          <div class="menu-price">RM 2.50</div>
+          <button class="btn-add-cart" data-name="Red Velvet Ice-Cream" data-price="2.50">Add to Cart</button>
+        </div>
+      </article>
+    </section>
+  </main>
+  
+  <section id="dummy-cart" class="container">
+  <div class="cart-wrapper">
+    <h2>Your Order </h2>
+    <div id="cart-items-list">
+      <p class="muted">Your cart is currently empty.</p>
+    </div>
+    <div class="cart-footer">
+      <strong>Total: <span id="cart-total-amount">RM 0.00</span></strong>
+      <button class="btn primary" onclick="alert(' Order Placed!')">Checkout</button>
+    </div>
+  </div>
+</section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="wing.html" class="footer-logo" aria-label="wing stop home">
+			<img src="wingfactory.jpg" alt="Logo" class="brand-logo-img"> 
+          <span class="footer-brand-name">wing factory my</span>
+        </a>
+        <p class="footer-desc">Welcome to wing factory, where bold flavors and handcrafted sauces meet crispy, craveable wings and sandwiches. Fast pickup and delivery available.</p>
+        <small class="footer-copy">© <span id="year-2"></span> wing factory my</small>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">WORKING HOURS</h4>
+        <ul class="footer-hours">
+          <li>Mon–Thu: 11:00 AM – 10:00 PM</li>
+          <li>Fri–Sat: 11:00 AM – 11:00 PM</li>
+          <li>Sun: 12:00 PM – 9:00 PM</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">FOLLOW US</h4>
+        <div class="social">
+          <a href="https://www.instagram.com/wingfactorymy/?hl=en" class="social-btn" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.5A4.5 4.5 0 1016.5 13 4.5 4.5 0 0012 8.5zm6.8-3.4a1.2 1.2 0 11-1.2-1.2 1.2 1.2 0 011.2 1.2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">CONTACT US</h4>
+        <p class="footer-contact"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ff6b3a" aria-hidden="true" style="vertical-align:middle;margin-right:.5rem"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> 29, Jalan Utama 3/2, Taman Utama, 85000 Segamat, Johor Darul Ta'zim</p>
+        <p class="footer-contact"><svg width="16" height="16" viewBox="0 0 24 24" fill="#ff6b3a" aria-hidden="true" style="vertical-align:middle;margin-right:.5rem"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.36 11.36 0 003.55.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h2.5a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.02l-2.21 2.22z"/></svg> (555) 123-4567</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swup@4"></script>
+  <script src="script.js"></script>
+</body>
+</html>
