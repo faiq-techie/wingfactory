@@ -329,83 +329,7 @@ body{
 .menu-item { transition: opacity .18s ease, transform .18s ease; }
 .menu-item[style*="display: none"] { opacity: 0; transform: scale(.995); pointer-events: none; }
 
-/* ===============================
-   Menu page (page-menu) typography
-   — bold, strong, and scoped only to the menu page
-   =============================== */
-.page-menu .section-title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--white);
-  margin: 0;
-  /* slightly bigger headline on menu page */
-  font-size: clamp(28px, 4.5vw, 46px);
-  line-height: 1;
-}
-
-.page-menu .menu-hero .lead {
-  font-weight: 700;
-  font-size: clamp(14px, 1.2vw, 18px);
-  color: var(--muted);
-  margin-top: .6rem;
-}
-
-/* Make chips bolder on the menu page */
-.page-menu .chip {
-  font-weight: 800;
-  letter-spacing: .6px;
-}
-
-/* Stronger menu item titles */
-.page-menu .menu-info h3 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 800;
-  font-size: 1.05rem;
-  letter-spacing: .6px;
-  color: var(--white);
-  margin-bottom: .25rem;
-}
-
-/* Make the muted description slightly heavier for better contrast */
-.page-menu .menu-info .muted {
-  color: var(--muted);
-  font-weight: 600;
-  font-size: .95rem;
-}
-
-/* Prices: bold and slightly larger */
-.page-menu .menu-price {
-  font-weight: 900;
-  font-size: 1.05rem;
-  color: var(--accent);
-}
-
-/* Slightly lift the menu-item card and increase contrast */
-.page-menu .menu-item {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.07));
-  border: 1px solid rgba(255,255,255,0.03);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.28);
-}
-
-/* Make images pop slightly more */
-.page-menu .menu-item img {
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
-  width: 140px;
-  height: 96px;
-  object-fit:cover;
-}
-
-/* Responsive tweaks: keep strong visual on small screens */
-@media (max-width: 780px) {
-  .page-menu .section-title { font-size: 28px; }
-  .page-menu .menu-info h3 { font-size: 1rem; }
-  .page-menu .menu-item img { width: 120px; height: 80px; }
-}
-
-/* aboutpage fixes */
+/* aboutpage */
 .about-landing {
   background: #f6f2ec; /* pale, warm tone */
   color: #111;
@@ -622,7 +546,6 @@ body{
 
 /* =========================================
    PROFESSIONAL MENU ENHANCEMENTS 
-   (Paste at bottom of style.css)
    ========================================= */
 
 .page-menu {
@@ -1059,5 +982,6 @@ body{
   align-items: center;
   font-size: 1.2rem;
 }
+
 
 
